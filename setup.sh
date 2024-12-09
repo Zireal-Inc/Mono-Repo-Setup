@@ -83,7 +83,7 @@ EOF
 setup_nx() {
     echo "Setting up Nx in the workspace..."
     pnpm add -D nx
-    npx nx@latest init 
+    npx nx@latest init --nxCloud=false
     echo "Nx setup complete."
 }
 
@@ -92,6 +92,9 @@ create_nx_app() {
     app_name="$1"
     echo "Creating Nx application '$app_name'..."
     npx nx generate @nx/react:application "$app_name"
+
+     npx nx generate @nx/react:application apps/app1 --directory=apps --name=app1 --bundler=vite  --compiler=swc  --style=css --unitTestRunner=vitest  --routing=true
+    
     echo "Application '$app_name' created."
 }
 
@@ -124,7 +127,7 @@ main() {
     cd "$workspace_dir"
 
     # Set up Nx in the workspace
-    # setup_nx
+    setup_nx
 
     # Create an application (example: "my-app")
     # create_nx_app "my-app"

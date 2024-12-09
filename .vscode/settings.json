@@ -1,0 +1,16 @@
+{
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#dd5635",
+        "panel.border": "#dd5635",
+        "sash.hoverBorder": "#dd5635",
+        "sideBar.border": "#dd5635",
+        "statusBar.background": "#bf3f20",
+        "statusBar.border": "#bf3f20",
+        "statusBar.debuggingBackground": "#20a0bf",
+        "statusBar.debuggingBorder": "#20a0bf",
+        "statusBarItem.hoverBackground": "#dd5635",
+        "statusBarItem.remoteBackground": "#bf3f20"
+    },
+    "peacock.remoteColor": "#bf3f20",
+    "nxConsole.nxWorkspacePath": ""
+}
